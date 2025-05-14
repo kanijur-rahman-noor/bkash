@@ -1,0 +1,46 @@
+
+.hold-button-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    height: 180px;
+}
+
+#holdButton {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #e91e63;
+  color: white;
+  font-size: 16px;
+  border: none;
+  z-index: 2;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0;
+  pointer-events: all;
+}
+
+.progress-ring {
+    rotate: 270deg;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: conic-gradient(#ff4081 0deg, #ff4081 0deg, transparent 0deg, transparent 360deg);
+  z-index: 1;
+  pointer-events: none;
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,0) 80px, rgba(0,0,0,1) 72px);
+}
+
+.circle{
+    display: flex
+    ;
+        justify-content: center;
+}
