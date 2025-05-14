@@ -24,6 +24,12 @@
   padding: 0;
   pointer-events: all;
 }
+#holdButton {
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE/Edge */
+  }
+  
 
 .progress-ring {
     rotate: 270deg;
