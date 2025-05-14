@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captive Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <div class="popup-close" onclick="closePopup()">&times;</div>
+      <!-- <img src="./assets/pop.jpg" class="responsive-img-pop"> -->
+      <video src="./assets/bkash_vid.mp4" 
+       class="responsive-img-pop" 
+       autoplay 
+       muted 
+       playsinline 
+       onended="closePopup()">
+</video>
+    </div>
+  </div>
+
+  <!-- Page 1 -->
+  <div id="page1" class="page active">
+    <div class="home_head">
+
+      <div class="logo"><img style="    width: 25%;" src="./assets/logo.png"></div>
+      <p class="get-yfi" style="font-size: small;">----- Get Free Y-Fi -----</p>
+      <div class="social-buttons">
+        <div  class="social-icons">
+          <a ><i class="fas fa-phone"></i></a>
+          <a ><i class="fab fa-facebook-f"></i></a>
+          <a ><i class="fab fa-google"></i></a>
+          <a ><i class="fab fa-whatsapp"></i></a>
+        </div>
+       
+      </div>
+      <input  type="text" placeholder="Email or Mobile Number" />
+
+    </div>
+    
+    <p style="color: #d12053;font-size: small;">----- Sponsored by -----</p>
+
+    <div class="ad-box">
+
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide"><img src="./assets/1.png" alt="Image 1"></div>
+          <div class="carousel-slide"><img src="./assets/2.png" alt="Image 2"></div>
+          <div class="carousel-slide"><img src="./assets/3.png" alt="Image 3"></div>
+          <div class="carousel-slide"><img src="./assets/4.png" alt="Image 4"></div>
+          <div class="carousel-slide"><img src="./assets/5.png" alt="Image 5"></div>
+        </div>
+      </div>
+
+      <!-- <ins data-freeyfi-slotid="3" data-freeyfi-ct0="%%CLICK_URL_UNESC%%" data-freeyfi-id="F7941D4446A4EC62B5E5472A97587">
+
+      </ins>
+      <script async="" src="//adserver.freeyfi.com/async.js" type="text/javascript"></script> -->
+    </div>
+
+
+    <button class="connect-button" onclick="goToPage2()">Tap To Get Connected</button>
+
+
+ 
+  </div>
+
+
+
+  <!-- Page 2 -->
+  <div id="page2" class="page">
+    <div class="timer-circle" ><span id="timer">10</span> seconds remaining</div> 
+    <div class="video-wrapper">
+      <video 
+        src="./assets/vid.mp4" 
+        autoplay 
+        muted 
+        playsinline 
+        
+        preload="auto">
+      </video>
+    </div>
+  </br>
+</br>
+    <div class="carousel-container2">
+      <div class="carousel-track2" id="carousel-track2">
+        <div class="carousel-slide2"><img src="./assets/6.png" alt="Image 1"></div>
+        <div class="carousel-slide2"><img src="./assets/7.png" alt="Image 2"></div>
+        <div class="carousel-slide2"><img src="./assets/8.png" alt="Image 3"></div>
+        <div class="carousel-slide2"><img src="./assets/9.png" alt="Image 4"></div>
+        <div class="carousel-slide2"><img src="./assets/10.png" alt="Image 5"></div>
+      </div>
+    </div>
+
+    <!-- <ins data-freeyfi-slotid="3" data-freeyfi-ct0="%%CLICK_URL_UNESC%%" data-freeyfi-id="F7941D4446A4EC62B5E5472A97587">
+
+    </ins>
+    <script async="" src="//adserver.freeyfi.com/async.js" type="text/javascript"></script> -->
+ 
+  </div>
+<div id="extra" style="display: none;">
+  <div  id="page-connected" class="page">
+    <img src="./assets/bird.gif" alt="Loading Bird" class="hero-bird-gif" />
+
+  </div>
+</div>
+ 
+  
+
+
+  <!-- Page 3 -->
+  <div id="page3" class="page">
+    <div class="home_head">
+
+      <div class="logo"><img style="    width: 25%;" src="./assets/logo.png"></div>
+      
+
+    </div>
+    <div class="connected">
+      <h2 style="font-size: small; color: #d12053;" class="" >Enjoy the next 30 minutes</h2>
+
+<img style="width: 38%;" src="./assets/f_logo.png">
+    </div>
+    <div  class="Today’s Special stroke">
+  
+<div class="hero-carousel">
+  <div class="hero-carousel-track" id="hero-carousel-track">
+    <img src="./assets/h1.webp" alt="1">
+    <img src="./assets/h2.webp" alt="2">
+    <img src="./assets/h3.webp" alt="3">
+  </div>
+</div>
+
+<div class="hero-dots" id="hero-dots">
+  <span class="hero-dot hero-active"></span>
+  <span class="hero-dot"></span>
+  <span class="hero-dot"></span>
+</div>
+    </div>
+
+
+<span style="font-size: smaller; color: #d12052a6; left: 23px; position: absolute;">অফার </span>
+<div class="swiper-container hero-swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="./assets/offer1.webp" alt="Offer 1"></div>
+    <div class="swiper-slide"><img src="./assets/offer2.webp" alt="Offer 2"></div>
+    <div class="swiper-slide"><img src="./assets/offer3.webp" alt="Offer 3"></div>
+    <div class="swiper-slide"><img src="./assets/offer4.webp" alt="Offer 4"></div>
+    <div class="swiper-slide"><img src="./assets/offer5.webp" alt="Offer 5"></div>
+  </div>
+  <!-- Optional: Pagination -->
+  <!-- <div class="swiper-pagination"></div> -->
+</div>
+
+
+
+    
+
+    <!-- Footer Markup -->
+    <div class="ff">
+  <div hidden class="footer">
+    <div class="footer-flex">
+      <div class="footer-hours">
+        <h3>Opening Hours</h3>
+        <p>Everyday 8am – 12am</p>
+        <p>Hotline <span class="hotline">09613505085</span></p>
+      </div>
+
+      <div class="social-icons-foot">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+  <button class="menu-button">অ্যাপ খুলুন</button>
+  <div class="footer-bottom"></div>
+</div>
+
+  </div>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
