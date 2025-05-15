@@ -108,9 +108,9 @@ setInterval(heroUpdateCarousel, 3000);
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     // bKash URI Scheme (example: "bkash://")
-    const bkashScheme = "bkash://";
-    const androidStoreURL = "https://play.google.com/store/apps/details?id=com.bkash.customerapp";
-    const iosStoreURL = "https://apps.apple.com/us/app/bkash/id1203795917";
+    const bkashScheme = "bKash://";
+    const androidStoreURL = "https://play.google.com/store/apps/details?id=com.bKash.customerapp&pcampaignid=web_share";
+    const iosStoreURL = "https://apps.apple.com/us/app/bkash/id1351183172";
 
     const now = new Date().getTime();
     let storeURL = androidStoreURL;
