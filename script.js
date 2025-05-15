@@ -102,3 +102,33 @@ setInterval(heroUpdateCarousel, 3000);
     },
   });
 
+
+
+  function openBkash() {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // bKash URI Scheme (example: "bkash://")
+    const bkashScheme = "bkash://";
+    const androidStoreURL = "https://play.google.com/store/apps/details?id=com.bkash.customerapp";
+    const iosStoreURL = "https://apps.apple.com/us/app/bkash/id1203795917";
+
+    const now = new Date().getTime();
+    let storeURL = androidStoreURL;
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      storeURL = iosStoreURL;
+    }
+
+    // Open the bKash app (or redirect if not installed)
+    const timeout = setTimeout(function () {
+      window.location.href = storeURL;
+    }, 2000); // Wait for 2 seconds before redirecting
+
+    // Try opening the app
+    window.location.href = bkashScheme;
+
+    // Cancel fallback if the app opens
+    window.onblur = function () {
+      clearTimeout(timeout);
+    };
+  }
